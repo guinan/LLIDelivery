@@ -1,0 +1,602 @@
+{
+  "@context": {
+    "OrEd": "http://data.organic-edunet.eu/resource/",
+    "d2r": "http://sites.wiwiss.fu-berlin.de/suhl/bizer/d2r-server/config.rdf#",
+    "db": "http://portal.organic-edunet.eu:8080/linkeddata/resource/",
+    "dbpedia": "http://dbpedia.org/resource/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "lom": "http://ltsc.ieee.org/rdf/lomv1p0/lom#",
+    "lomvoc": "http://ltsc.ieee.org/rdf/lomv1p0/vocabulary#",
+    "lre": "http://organic-edunet.eu/LOM/rdf/voc#",
+    "map": "file:/home/flag/D2RQ/lom.n3#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "vcard": "http://www.w3.org/2001/vcard-rdf/3.0#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "db:Keyword-2909-2",
+      "rdf:value": [
+        {
+          "@language": "de",
+          "@value": "biologische Landwirtschaft"
+        },
+        {
+          "@language": "el",
+          "@value": "βιολογική γεωργία"
+        },
+        {
+          "@language": "en",
+          "@value": "organic farming "
+        }
+      ]
+    },
+    {
+      "@id": "db:Keyword-2909-0",
+      "rdf:value": [
+        {
+          "@language": "de",
+          "@value": "Zertifizierung"
+        },
+        {
+          "@language": "en",
+          "@value": "certification"
+        },
+        {
+          "@language": "el",
+          "@value": "πιστοποίηση"
+        }
+      ]
+    },
+    {
+      "@id": "db:Keyword-2909-1",
+      "rdf:value": [
+        {
+          "@language": "el",
+          "@value": "συμβατική γεωργία"
+        },
+        {
+          "@language": "en",
+          "@value": "conventional farming "
+        },
+        {
+          "@language": "de",
+          "@value": "konventionelle Landwirtschaft"
+        }
+      ]
+    },
+    {
+      "@id": "db:TaxonPath-2401-7669",
+      "lom:classificationTaxon": {
+        "@id": "db:Taxon-2401"
+      },
+      "lom:taxonpathSource": {
+        "@language": "en",
+        "@value": "Organic.Edunet Ontology "
+      }
+    },
+    {
+      "@id": "db:Classification-2401",
+      "lom:classificationDescription": {
+        "@id": "db:ClassificationDescription-1"
+      },
+      "lom:classificationKeyword": [
+        {
+          "@id": "db:ClassificationKeyword-2"
+        },
+        {
+          "@id": "db:ClassificationKeyword-1"
+        }
+      ],
+      "lom:classificationPurpose": {
+        "@id": "lomvoc:Purpose-discipline"
+      },
+      "lom:taxonPath": [
+        {
+          "@id": "db:TaxonPath-2401-7671"
+        },
+        {
+          "@id": "db:TaxonPath-2401-7670"
+        },
+        {
+          "@id": "db:TaxonPath-2401-7672"
+        },
+        {
+          "@id": "db:TaxonPath-2401-7669"
+        }
+      ]
+    },
+    {
+      "@id": "db:Contribute-2909-12723",
+      "lom:contributionEntity": {
+        "@id": "db:lifecycleContribution-12723"
+      },
+      "lom:dateTimeValue": [
+        "2011-05-17T05:53:31.00Z",
+        {
+          "@id": "lomvoc:Role-contentprovider"
+        }
+      ]
+    },
+    {
+      "@id": "db:Relation-11556",
+      "lom:identifier": {
+        "@id": "db:relation_identifier_sample_1_1"
+      },
+      "lom:relatedResourceDescription": {
+        "@id": "db:relatedDescription-1"
+      },
+      "lom:relationKind": {
+        "@id": "dcterms:ispartof"
+      }
+    },
+    {
+      "@id": "db:metaMetadataContribute-2909-9050",
+      "lom:contributionEntity": {
+        "@id": "db:metaMetadataContribtuion-9050"
+      },
+      "lom:dateTimeValue": "0000-00-00 00:00:00",
+      "lom:metaMetadataContributionRole": {
+        "@id": "lomvoc:Role-enricher"
+      }
+    },
+    {
+      "@id": "db:metaMetadataContribute-2909-9051",
+      "lom:contributionEntity": {
+        "@id": "db:metaMetadataContribtuion-9051"
+      },
+      "lom:dateTimeValue": "0000-00-00 00:00:00",
+      "lom:metaMetadataContributionRole": {
+        "@id": "lomvoc:Role-validator"
+      }
+    },
+    {
+      "@id": "db:Taxon-2402",
+      "lom:taxonEntry": "CommentsOn :: OrganicPrinciple",
+      "lom:taxonId": "http://www.cc.uah.es/ie/ont/OE-Predicates#CommentsOn ::\n                 http://www.cc.uah.es/ie/ont/OE-OAAE#OrganicPrinciple"
+    },
+    {
+      "@id": "db:Taxon-2403",
+      "lom:taxonEntry": "ProvidesExamplesOf :: OrganicConventionalAgricultureComparison",
+      "lom:taxonId": "http://www.cc.uah.es/ie/ont/OE-Predicates#ProvidesExamplesOf ::\n                 http://www.cc.uah.es/ie/ont/OE-OAAE#OrganicConventionalAgricultureComparison"
+    },
+    {
+      "@id": "db:Taxon-2401",
+      "lom:taxonEntry": "ProvidesExamplesOf :: OrganicPrinciple",
+      "lom:taxonId": "http://www.cc.uah.es/ie/ont/OE-Predicates#ProvidesExamplesOf ::\n                        http://www.cc.uah.es/ie/ont/OE-OAAE#OrganicPrinciple"
+    },
+    {
+      "@id": "db:Identifier-14075",
+      "dcterms:identifier": {
+        "@id": "http://www.youtube.com/v/"
+      },
+      "lom:identifierCatalog": "URI"
+    },
+    {
+      "@id": "db:ClassificationKeyword-1",
+      "rdf:value": {
+        "@language": "en",
+        "@value": "Organic"
+      }
+    },
+    {
+      "@id": "db:requirement-2909-0",
+      "lom:isCompositeOf": {
+        "@id": "db:SingleTechnicalRequirement_sample_1_1"
+      }
+    },
+    {
+      "@id": "db:Identifier-14076",
+      "dcterms:identifier": {
+        "@id": "http://www.youtube.com/watch?v=BebNsezt6r0"
+      },
+      "lom:identifierCatalog": "youtube"
+    },
+    {
+      "@id": "db:ClassificationKeyword-2",
+      "rdf:value": {
+        "@language": "en",
+        "@value": "Farming"
+      }
+    },
+    {
+      "@id": "db:Annotation-14023",
+      "vcard:EMAIL": "apaparadi@gmail.com",
+      "vcard:FN": "Angeliki Paparadi",
+      "vcard:N": "Angeliki Paparadi",
+      "vcard:ORG": "http://www.agroknow.gr",
+      "vcard:VERSION": "3.0"
+    },
+    {
+      "@id": "db:metaMetadataContribute-2909-9049",
+      "lom:contributionEntity": {
+        "@id": "db:metaMetadataContribtuion-9049"
+      },
+      "lom:dateTimeValue": "0000-00-00 00:00:00",
+      "lom:metaMetadataContributionRole": {
+        "@id": "lomvoc:Role-enricher"
+      }
+    },
+    {
+      "@id": "db:metaMetadataContribute-2909-9048",
+      "lom:contributionEntity": {
+        "@id": "db:metaMetadataContribtuion-9048"
+      },
+      "lom:dateTimeValue": "2012-04-02T20:18:18.82Z",
+      "lom:metaMetadataContributionRole": {
+        "@id": "lomvoc:Role-creator"
+      }
+    },
+    {
+      "@id": "http://data.organic-edunet.eu/resource/resource/2909",
+      "@type": "lom:LearningObject",
+      "dcterms:format": [
+        "application/x-shockwave-flash",
+        "video/x-ms-wmv",
+        "text/html",
+        "video/3gpp"
+      ],
+      "dcterms:language": "en",
+      "dcterms:title": [
+        {
+          "@language": "de",
+          "@value": "Was ist biologisch."
+        },
+        {
+          "@language": "en",
+          "@value": "What is organic. "
+        },
+        {
+          "@language": "el",
+          "@value": "Τι είναι βιολογικό."
+        }
+      ],
+      "lom:OtherPlatformRequirements": {
+        "@language": "en",
+        "@value": "Multimedia"
+      },
+      "lom:aggregationLevel": {
+        "@id": "lomvoc:AggregationLevel-2"
+      },
+      "lom:annotation": {
+        "@id": "db:Annotation-2909-14023"
+      },
+      "lom:classification": {
+        "@id": "db:Classification-2401"
+      },
+      "lom:copyrightAndOtherRestrictions": "yes",
+      "lom:cost": "no",
+      "lom:coverage": {
+        "@id": "db:Coverage-2909-0"
+      },
+      "lom:description": {
+        "@id": "db:Description-2909-0"
+      },
+      "lom:educational": {
+        "@id": "db:Educational-2909-11632"
+      },
+      "lom:identifier": [
+        {
+          "@id": "db:Identifier-14076"
+        },
+        {
+          "@id": "db:Identifier-14075"
+        }
+      ],
+      "lom:keyword": [
+        {
+          "@id": "db:Keyword-2909-1"
+        },
+        {
+          "@id": "db:Keyword-2909-2"
+        },
+        {
+          "@id": "db:Keyword-2909-0"
+        }
+      ],
+      "lom:lifeCycleContribution": {
+        "@id": "db:Contribute-2909-12723"
+      },
+      "lom:lifeCycleStatus": {
+        "@id": "lomvoc:Status-final"
+      },
+      "lom:metaMetadataContribution": [
+        {
+          "@id": "db:metaMetadataContribute-2909-9049"
+        },
+        {
+          "@id": "db:metaMetadataContribute-2909-9050"
+        },
+        {
+          "@id": "db:metaMetadataContribute-2909-9051"
+        },
+        {
+          "@id": "db:metaMetadataContribute-2909-9048"
+        }
+      ],
+      "lom:metaMetadataIdentifier": {
+        "@id": "db:MetaMetadataIdentifier-2909"
+      },
+      "lom:metaMetadataLanguage": "en",
+      "lom:metadataSchema": [
+        "LOMv1.0",
+        "LREv3.0"
+      ],
+      "lom:relation": {
+        "@id": "db:Relation-11556"
+      },
+      "lom:structure": {
+        "@id": "lomvoc:Structure-atomic"
+      },
+      "lom:technicalDuration": "PT0.269S",
+      "lom:technicalInstallationRemarks": {
+        "@language": "en",
+        "@value": "Flash Player is necessary"
+      },
+      "lom:technicalLocation": [
+        {
+          "@id": "rtsp://v3.cache5.c.youtube.com/\n         CjQLENy73wIaKwm96u3ssc3mBRMYESARFEIQWW91VHViZUhhcnZlc3RlckgGUgZ2aWRlb3MM/0/0/0/video.3gp"
+        },
+        {
+          "@id": "http://www.nationalfruitcollection.org.uk/"
+        },
+        {
+          "@id": "http://www.youtube.com/v/BebNsezt6r0?version=3"
+        },
+        {
+          "@id": "rtsp://v5.cache1.c.youtube.com/CjQLENy73wIaKwm96u3ssc3mBRMYDSANFEIQWW91VHViZUhhcnZlc3RlckgGUgZ2aWRlb3MM/0/0/0/video.3gp"
+        }
+      ],
+      "lom:technicalRequirements": {
+        "@id": "db:requirement-2909-0"
+      },
+      "lom:technicalSize": "0"
+    },
+    {
+      "@id": "db:MetaMetadataIdentifier-2909",
+      "dcterms:identifier": "http://oe.confolio.org/scam/156/entry/2365",
+      "lom:identifierCatalog": "URI"
+    },
+    {
+      "@id": "db:metaMetadataContribtuion-9051",
+      "vcard:EMAIL": "apaparadi@gmail.com",
+      "vcard:FN": [
+        "Confolio Administrator",
+        "Angeliki Paparadi"
+      ],
+      "vcard:N": [
+        "Confolio Administrator",
+        "Angeliki Paparadi"
+      ],
+      "vcard:ORG": [
+        "http://www.kth.se",
+        "http://www.agroknow.gr"
+      ],
+      "vcard:VERSION": "3.0"
+    },
+    {
+      "@id": "db:metaMetadataContribtuion-9050",
+      "vcard:EMAIL": "lynda.gibbins@nottingham.ac.uk",
+      "vcard:FN": [
+        "Angeliki Paparadi",
+        "Lynda Gibbins"
+      ],
+      "vcard:N": [
+        "Angeliki Paparadi",
+        "Lynda Gibbins"
+      ],
+      "vcard:ORG": "Intute / University of Nottingham (Intute)",
+      "vcard:VERSION": "3.0"
+    },
+    {
+      "@id": "db:TaxonPath-2401-7672",
+      "lom:classificationTaxon": {
+        "@id": "db:Taxon-2404"
+      },
+      "lom:taxonpathSource": {
+        "@language": "en",
+        "@value": "Organic.Edunet Ontology "
+      }
+    },
+    {
+      "@id": "db:TaxonPath-2401-7670",
+      "lom:classificationTaxon": {
+        "@id": "db:Taxon-2402"
+      },
+      "lom:taxonpathSource": {
+        "@language": "en",
+        "@value": "Organic.Edunet Ontology "
+      }
+    },
+    {
+      "@id": "db:TaxonPath-2401-7671",
+      "lom:classificationTaxon": {
+        "@id": "db:Taxon-2403"
+      },
+      "lom:taxonpathSource": {
+        "@language": "en",
+        "@value": "Organic.Edunet Ontology "
+      }
+    },
+    {
+      "@id": "db:Coverage-2909-0",
+      "dcterms:coverage": [
+        {
+          "@id": "dbpedia:World"
+        },
+        {
+          "@id": "dbpedia:UnitedKingdom"
+        }
+      ]
+    },
+    {
+      "@id": "db:Age-8953",
+      "rdf:value": {
+        "@language": "en",
+        "@value": "8-U"
+      }
+    },
+    {
+      "@id": "db:Educational-2909-11632",
+      "dcterms:type": [
+        {
+          "@id": "lomvoc:LearningResourceType-video"
+        },
+        {
+          "@id": "lomvoc:LearningResourceType-presentation"
+        }
+      ],
+      "lom:educationDescription": {
+        "@id": "db:EduDescription-3000"
+      },
+      "lom:educationalContext": [
+        {
+          "@id": "lomvoc:Context-distanceeducation"
+        },
+        {
+          "@id": "lomvoc:Context-pre-school"
+        },
+        {
+          "@id": "lomvoc:Context-educationaladministration"
+        }
+      ],
+      "lom:educationalDifficulty": {
+        "@id": "lomvoc:Difficulty-medium"
+      },
+      "lom:educationalIntendedUserRole": [
+        {
+          "@id": "lomvoc:IntendedEndUserRole-parent"
+        },
+        {
+          "@id": "lomvoc:IntendedEndUserRole-learner"
+        },
+        {
+          "@id": "lomvoc:IntendedEndUserRole-teacher"
+        }
+      ],
+      "lom:educationalInteractivityLevel": {
+        "@id": "lomvoc:InteractivityLevel-medium"
+      },
+      "lom:educationalLanguage": "en",
+      "lom:educationalTypicalAgeRange": {
+        "@id": "db:Age-8953"
+      },
+      "lom:educationalTypicalLearningTime": "PT30M"
+    },
+    {
+      "@id": "db:relation_identifier_sample_1_1",
+      "dcterms:identifier": "http://smilingvines.com/OrganicvsConventional.pdf",
+      "lom:identifierCatalog": "URI"
+    },
+    {
+      "@id": "db:EduDescription-3000",
+      "dcterms:description": {
+        "@language": "en",
+        "@value": "This learning video should\n                        be played by a browser that supports Flash Player."
+      }
+    },
+    {
+      "@id": "db:relatedDescription-1",
+      "dcterms:description": {
+        "@language": "en",
+        "@value": "The PDF file  explains the most important\n      differences between organic and conventional farming"
+      }
+    },
+    {
+      "@id": "db:ClassificationDescription-1",
+      "dcterms:description": {
+        "@language": "en",
+        "@value": "This classification\n                                provides many examples of Organic Principles and Ontologies."
+      }
+    },
+    {
+      "@id": "db:Taxon-2404",
+      "lom:taxonEntry": "ProvidesExamplesOf :: OrganicStandard",
+      "lom:taxonId": "http://www.cc.uah.es/ie/ont/OE-Predicates#ProvidesExamplesOf ::\n                 http://www.cc.uah.es/ie/ont/OE-OAAE#OrganicStandard"
+    },
+    {
+      "@id": "db:SingleTechnicalRequirement_sample_1_1",
+      "lom:orCompositeMaximumVersion": "9.0",
+      "lom:orCompositeMinimumVersion": "1.7",
+      "lom:orCompositeName": {
+        "@id": "lomvoc:OperatingSystemTechnology-firefox"
+      },
+      "lom:orCompositeType": {
+        "@id": "lomvoc:RequirementType-browser"
+      }
+    },
+    {
+      "@id": "db:Description-2909-0",
+      "dcterms:description": [
+        {
+          "@language": "en",
+          "@value": "A learning video about the differences between\n             conventional and organic farming. Furthermore the video shows the organic\n             certifier's logos for several products. "
+        },
+        {
+          "@language": "de",
+          "@value": "Ein Ausbildungsvideo über die Unterschiede zwischen\n              konventioneller und biologischer Landwirtschaft. Darüber hinaus zeigt das video\n               das biologisches Zertifizierungslabel für mehrere Produkte."
+        },
+        {
+          "@language": "el",
+          "@value": "Ένα εκπαιδευτικό βίντεο για τις διαφορές ανάμεσα\n              στη συμβατική και τη βιολογική γεωργία. Επιπλέον το βίντεο δείχνει τη σήμανση\n              της βιολογικής πιστοποίησης σε διάφορα προϊόντα."
+        }
+      ]
+    },
+    {
+      "@id": "db:metaMetadataContribtuion-9048",
+      "vcard:EMAIL": "hebner@kth.se",
+      "vcard:FN": [
+        "Hannes Ebner",
+        "Confolio Administrator"
+      ],
+      "vcard:N": [
+        "Hannes Ebner",
+        "Confolio Administrator"
+      ],
+      "vcard:ORG": "http://www.kth.se",
+      "vcard:VERSION": "3.0"
+    },
+    {
+      "@id": "db:metaMetadataContribtuion-9049",
+      "vcard:EMAIL": [
+        "hebner@kth.se",
+        "lynda.gibbins@nottingham.ac.uk"
+      ],
+      "vcard:FN": [
+        "Lynda Gibbins",
+        "Hannes Ebner"
+      ],
+      "vcard:N": [
+        "Lynda Gibbins",
+        "Hannes Ebner"
+      ],
+      "vcard:ORG": [
+        "http://www.kth.se",
+        "http://www.intute.ac.uk"
+      ],
+      "vcard:VERSION": "3.0"
+    },
+    {
+      "@id": "db:Annotation-2909-14023",
+      "lom:annotationDescription": {
+        "@language": "en",
+        "@value": "Quality certified"
+      },
+      "lom:annotationEntity": {
+        "@id": "db:Annotation-14023"
+      },
+      "lom:dateTimeValue": "2012-05-16T00:00:00.00Z"
+    },
+    {
+      "@id": "db:lifecycleContribution-12723",
+      "vcard:FN": "YouTube",
+      "vcard:N": "YouTube",
+      "vcard:ORG": "YouTube",
+      "vcard:VERSION": "3.0"
+    }
+  ]
+
+}
