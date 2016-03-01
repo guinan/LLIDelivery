@@ -9,7 +9,8 @@ router.get('/', function(req, res, next) {
 	//putting triples into the DB
   //var lli = llidata.ex1;
   console.log("loaded lli: "+llidata);
-  db.put(llidata, function(err){
+  //putting data into database
+  db.jsonld.put(llidata, function(err){
   	if(err){
   		console.log("Whoops ... "+err);
   		res.sendStatus(500)
