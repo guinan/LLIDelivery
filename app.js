@@ -9,7 +9,8 @@ var bodyParser = require('body-parser');
 //for storing LLIs
 var level = require("level-browserify");
 var levelgraph = require("levelgraph");
-module.db = levelgraph(level("llirepo"));
+var levelgraphJSONLD = require('levelgraph-jsonld');
+module.db = levelgraphJSONLD(levelgraph('lli_db'));
 
 var routes = require('./routes/index');
 var bootstrapper = require('./routes/bootstrap');
