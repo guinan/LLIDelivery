@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>LLI {{ lli_id }}</title>
+    <title>LLI {{ lli_title }}</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+
   </head>
   <body>
     <h1>{{ lli_title }}</h1>
     <table>
 <tr>
-<td>Title</td>
-<td>{{ lli_title }}</td>
+<td rowspan="5"><img src="{{ lli_thumbnail}}"></td>
+<td class="left">Title</td>
+<td>"{{ lli_title }}"</td>
+</tr>
+<tr>
+<td class="left">Description </td><td>{{ lli_description }}</td>
+</tr>
+<tr>
+<td class="left">Educational </td>
+<td>
+	<ul>
+		<li>learning resource type: {{ lli_educ_resourcetype }}</li>
+		<li>interactivity level: {{ lli_educ_interlevel }}</li>
+		<li>interactivity type:{{ lli_educ_intertype }}</li>
+		<li>language: {{ lli_educ_lang }}</li>
+		<li>typical age range: {{ lli_educ_age }}</li>
+	</ul>
+</td>
+<tr>
+<td class="left">Identifier </td><td>{{ lli_identifier }}</td>
+</tr>
+<tr>
+<td class="left">identifier catalog </td><td>{{ lli_identifier_catalog }}</td>
+</tr>
 </tr>
     </table>
+    <pre>{{ data }}</pre>
   </body>
 </html>

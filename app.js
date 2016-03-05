@@ -37,6 +37,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/bootstrap', bootstrapper);
+app.use('/resources', routes);
 app.use('/resource', routes);
 
 // catch 404 and forward to error handler
