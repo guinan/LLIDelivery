@@ -14,11 +14,11 @@ router.get('/', function(req,res){
 	});
 });
 
-router.get('/resource', function(req,res){
+router.get('/resource/:res_uri', function(req,res){
 	//http://data.organic-edunet.eu/resource/resource/2909
 	//tmp= db.jsonld.search({'@type' : "lom:LearningObject",}, function(err, obj) {
 	//db.search("*", function (err, results) {
-  		console.log(JSON.stringify(llidata, null, 2));
+  		//console.log(JSON.stringify(llidata, null, 2));
   		res.format({
   			html: function(){
   				res.render('resource', {
@@ -53,7 +53,8 @@ router.get('/resource', function(req,res){
 	//http://data.organic-edunet.eu/resource/resource/2909
 	//tmp= db.jsonld.search({'@type' : "lom:LearningObject",}, function(err, obj) {
 	//db.search("*", function (err, results) {
-  		console.log(JSON.stringify(llidata, null, 2));
+  	console.log(JSON.stringify(llidata, null, 2));
+  	res.status(200).send(llidata);
 		
 	
 });
