@@ -14,6 +14,7 @@ module.db = levelgraphJSONLD(levelgraph('lli_db'));
 
 var routes = require('./routes/index');
 var bootstrapper = require('./routes/bootstrap');
+var fulldoc = require('./routes/fulldoc');
 
 
 
@@ -39,6 +40,7 @@ app.use('/', routes);
 app.use('/bootstrap', bootstrapper);
 app.use('/resources', routes);
 app.use('/resource', routes);
+app.use('/fulldoc', fulldoc);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
