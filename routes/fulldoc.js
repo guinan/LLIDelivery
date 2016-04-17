@@ -16,14 +16,14 @@ router.get('/', function(req, res, next) {
  //  //putting data into database
    browser.visit(req.query.res_uri, function() {
    //console.log(browser.location.href);
-   res.status(200).send(browser.document.documentElement.innerHTML);
+   
  //  if(browser.)
   
-     if(browser.html()){
-       res.status(200).send(browser.html());
+   if(browser.success){
+       res.status(200).send(browser.document.documentElement.innerHTML);
      
        } ;
-  
+  browser.close();
  //  //console.log(browser.document.documentElement.innerHTML);
  //  });
  //   browser.close(); 
