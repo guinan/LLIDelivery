@@ -20,7 +20,7 @@ router.get('/', function(req, res, next) {
  //  if(browser.)
   
    if(browser.success){
-       res.status(200).send(browser.document.documentElement.innerHTML);
+       res.status(200).send(browser.html());
      
        } ;
   browser.close();
