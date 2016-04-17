@@ -15,6 +15,7 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var bootstrapper = require('./routes/bootstrap');
 var fulldoc = require('./routes/fulldoc');
+var fulldoc_phantom = require('./routes/fulldoc_phantom');
 
 
 
@@ -40,7 +41,9 @@ app.use('/', routes);
 app.use('/bootstrap', bootstrapper);
 app.use('/resources', routes);
 app.use('/resource', routes);
-app.use('/fulldoc', fulldoc);
+//app.use('/fulldoc', fulldoc);
+app.use('/fulldoc', fulldoc_phantom);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
