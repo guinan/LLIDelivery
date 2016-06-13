@@ -22,15 +22,18 @@ router.get('/', function(req, res, next) {
    if(browser.success){
        res.status(200).send(browser.html());
      
-       } ;
-  browser.close();
+       } 
+       else{
+        res.status(404);
+       };
+       
  //  //console.log(browser.document.documentElement.innerHTML);
  //  });
  //   browser.close(); 
 
  //   browser.visit(req.query.res_uri)
   //        .then(function() {res.status(200).send(browser.html())});
-});
+    });
  });
 
 module.exports = router;

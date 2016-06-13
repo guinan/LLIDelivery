@@ -37,12 +37,18 @@ app.use(cookieParser());
 app.use(require('less-middleware')(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(function(req,res,next){
+res.header("Access-Control-Allow-Origin", "*");
+res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+next();
+});
+
 app.use('/', routes);
 app.use('/bootstrap', bootstrapper);
 app.use('/resources', routes);
 app.use('/resource', routes);
-//app.use('/fulldoc', fulldoc);
-app.use('/fulldoc', fulldoc_phantom);
+app.use('/fulldoc', fulldoc);
+//app.use('/fulldoc', fulldoc_phantom);
 
 
 // catch 404 and forward to error handler

@@ -21,6 +21,7 @@ router.get('/resource/:res_uri', function(req,res){
   		//console.log(JSON.stringify(llidata, null, 2));
   		res.format({
   			html: function(){
+
   				res.render('resource', {
 					title: "LLIDelivery",
 					lli_title: llidata["dcterms:title"]["@value"],
